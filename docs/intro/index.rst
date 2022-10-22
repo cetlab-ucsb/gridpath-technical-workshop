@@ -41,20 +41,19 @@ MapRE wind and solar resource data: https://mapre.es.ucsb.edu/project/southern-a
 Project team
 ============
 
-* Southern African Development Community (SADC) Centre for Renewable Energy and Energy Efficiency (SACREEE): Kudakwashe Ndhlukula and Eugenia Masvikeni
+* **Southern African Development Community (SADC) Centre for Renewable Energy and Energy Efficiency (SACREEE)**: Kudakwashe Ndhlukula and Eugenia Masvikeni
 
-* University of California at Santa Barbara: Prof. Ranjit Deshmukh, Prof. Grace Wu, Dr. AFM Kamal Chowdhury, Anagha Uppal, Dr. Measrainsey Meng
+* **University of California at Santa Barbara**: Prof. Ranjit Deshmukh, Prof. Grace Wu, Dr. AFM Kamal Chowdhury, Anagha Uppal, Dr. Measrainsey Meng
 
-* University of Cape Town: Dr. Piotr Wolski
+* **University of Cape Town**: Dr. Piotr Wolski
 
-* Blue Marble Analytics: Dr. Ana Mileva
+* **Blue Marble Analytics**: Dr. Ana Mileva
 
 Stakeholders and participants
 =============================
 
 * System Planners, Utilities, Academia, and Research Organizations focusing on Southern Africa and background in electricity system planning.
 
-========================
 Technical workshop goals
 ========================
 

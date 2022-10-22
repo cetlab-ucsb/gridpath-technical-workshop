@@ -17,3 +17,5 @@ Renewable Energy Decision Support (REDS) Project: Technical Workshop 2
 
    intro/index
    requirements/index
+   gridpath/install
+   gridpath/examples
