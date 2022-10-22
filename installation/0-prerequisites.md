@@ -80,3 +80,12 @@ jupyter-lab
 ```
 
 This will open Jupyter Lab in the current folder/working directory of your terminal. A browser window should open if run successfully.
+
+
+## Cbc solver
+
+On Windows, you can also download the Cbc executable from the [AMPL website](https://ampl.com/products/solvers/open-source/#cbc), specifically here for [64-bit Windows](https://ampl.com/dl/open/cbc/cbc-win64.zip).
+
+GridPath allows you to specify the location of the solver executable; to get it to be recognized, automatically, you can also add the folder path to your PATH system environment variables (see instructions for Python above; general instructions for Windows [here](https://www.java.com/en/download/help/path.xml)).
+
+Make sure to close all windows of the system environment variables. Type cbc in CMD and the cbc solver should execute with a “Coin” prompt. If the cbc solver is not recognized at the CMD command prompt, restart CMD and try typing “cbc” again. Windows should be able to find the cbc executable as long as its folder is in the system environment path. 
