@@ -32,7 +32,7 @@ Once you have navigated to `PATH\TO\GRIDPATH`, run the following to install Grid
 
     pip install .[ui]
 
-Testing GridPath installation
+Test GridPath installation
 =============================
 
 To test the GridPath and solver installation, navigate to the main GridPath folder in CMD and enter:

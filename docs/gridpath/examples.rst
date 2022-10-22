@@ -19,10 +19,10 @@ At this point, your working directory should look like ``PATH\TO\GRIDPATH\db``, 
 
 If you're going on to use Jupyter Lab, copy the output working directory.
 
-Using Jupyter Lab
+Launch Jupyter Lab
 =================
 
-Open the Jupyter notebook by going into
+Open the Jupyter notebook by going into the
 
 
 Using command line
