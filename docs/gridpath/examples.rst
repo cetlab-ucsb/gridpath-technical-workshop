@@ -1,6 +1,6 @@
-===========================================
-Running simple example models and scenarios
-===========================================
+====================================
+Running example models and scenarios
+====================================
 
 Using Jupyter/python notebooks
 ==============================

@@ -10,3 +10,4 @@ GridPath Technical Workshop
    requirements/index
    gridpath/install
    gridpath/workshop
+   gridpath/examples
