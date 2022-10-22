@@ -3,18 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to REDS Technical Workshop 2's documentation!
-=====================================================
+Renewable Energy Decision Support (REDS) Project: Technical Workshop 2
+======================================================================
+
+**Dates:** October 25-28, 2022
+
+**Location:** Swakopmund, Namibia
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :name: mastertoc
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   intro/index
+   requirements/index
