@@ -73,26 +73,6 @@ E.g.
 
 If you see the environment name in parenthesis before your current directory, this step has been successful.
 
-Jupyter Lab
-===========
-
-Install JupyterLab with ``pip`` by running the following line in your terminal:
-
-.. code::
-
-    pip install jupyterlab
-
-Note: If you install JupyterLab with conda or mamba, we recommend using the `conda-forge channel`_.
-
-Once installed, launch JupyterLab with:
-
-.. code::
-
-    jupyter-lab
-
-This will open Jupyter Lab in the current folder/working directory of your terminal. A browser window should open if run successfully.
-
-
 Cbc solver
 ==========
 
@@ -106,7 +86,6 @@ If the cbc solver is not recognized at the CMD command prompt, restart CMD and t
 Windows should be able to find the cbc executable as long as its folder is in the system environment path.
 
 
-.. _`conda-forge channel`: https://conda-forge.org/
 .. _`AMPL website`: https://ampl.com/products/solvers/open-source/#cbc
 .. _`64-bit Windows`: https://ampl.com/dl/open/cbc/cbc-win64.zip
 .. _`general instructions for Windows`: https://www.java.com/en/download/help/path.xml
