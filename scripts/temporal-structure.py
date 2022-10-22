@@ -1,11 +1,10 @@
 import os
-from glob import glob
 import pandas as pd
-import numpy as np
-import datetime
 
 # input csvs path
 input_path = "/Users/meas/Documents/gridpath-0.14.1/db/csvs_sapp_GPv0.14.1_workshop_072022" # directory to pull inputs
+
+# output csvs path
 output_path = "/Users/meas/Documents/gridpath-0.14.1/db/csvs_reds_102022"
 
 # get temporal files
