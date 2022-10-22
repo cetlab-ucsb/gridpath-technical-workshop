@@ -2,6 +2,8 @@
 Running example models and scenarios
 ====================================
 
+In this section, we will be gaining familiarity with using GridPath by using the example input data provided in the GridPath source code.
+
 Using Jupyter/python notebooks
 ==============================
 

@@ -11,3 +11,4 @@ GridPath Technical Workshop
    gridpath/install
    gridpath/workshop
    gridpath/examples
+   gridpath/sapp
