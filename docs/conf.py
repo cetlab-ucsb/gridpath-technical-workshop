@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'REDS Technical Workshop 2'
-copyright = '2022, Ranjit Deshmukh'
-author = 'Ranjit Deshmukh'
+project = 'GridPath Technical Workshop'
+copyright = '2022, cetlab'
+author = 'cetlab'
 
 
 # -- General configuration ---------------------------------------------------
