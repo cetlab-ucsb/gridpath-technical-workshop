@@ -5,7 +5,13 @@ Requirements
 Python 3.9
 ==========
 
-GridPath is tested in Python 3.8, 3.9, and 3.10. For the purposes of this workshop, we will be using Python 3.9. Please download Python 3.9 here: https://www.python.org/downloads/release/python-3913/
+GridPath is tested in Python 3.8, 3.9, and 3.10.
+For the purposes of this workshop, we will be using Python 3.9.
+
+Please download Python 3.9 here: https://www.python.org/downloads/release/python-3913/
+
+Windows
+#######
 
 Use the Windows Installer (64-bit).
 
@@ -41,13 +47,56 @@ Open a new CMD window and type ``python``. You should see this:
     Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
 
-
 To exit the python console, type ``quit()``.
+
+
+macOS
+#####
+
+Download the macOS 64-bit, installer
+(Intel-only if your processor is an Intel one, otherwise download the universal2 installer).
+
+Wait for the download to complete.
+Once it's finished, double-click the package to start the installation process.
+You can follow the on-screen instructions in the Python installer for this step.
+
+Once the installation is complete,
+the installer will automatically open Python's installation directory in a new Finder window.
+
+Open a new terminal window (you can spotlight search for ``terminal`` and it should appear).
+Enter:
+
+.. code::
+
+    python --version
+
+If your laptop is like mine and came with an older version of Python installed, your output might be something like this:
+
+.. code::
+
+    Python 2.7.16
+
+Instead, try running this:
+
+.. code::
+
+    python3.9 --version
+
+If the Python installation you did above installed correctly, you should see something like this:
+
+.. code::
+
+    Python 3.9.13
+
 
 Python virtual environment
 ==========================
 
-Once you have installed Python 3.9, you can create the virtual environment for GridPath by running from CMD:
+Windows
+#######
+
+Once you have installed Python 3.9,
+you can create the virtual environment for GridPath by running from CMD:
 
 .. code::
 
@@ -71,7 +120,40 @@ E.g.
 
     C:\Users\bluemarble\gridpath_sa_workshop_env\Scripts\activate.bat
 
-If you see the environment name in parenthesis before your current directory, this step has been successful.
+If you see the environment name in parentheses before your current directory,
+this step has been successful.
+
+macOS
+#####
+
+You can create a new environment in the terminal by running something like:
+
+.. code::
+
+    python3.9 venv -m /PATH/TO/ENV
+
+So, in my case, if wanted to create a virtual environment titled ``gridpath_sa_workshop_env``
+in ``/Users/bluemarble/``, then my command will look something like:
+
+.. code::
+
+    python3.9 venv -m /Users/bluemarble/gridpath_sa_workshop_env
+
+After the virtual environment has been created, you can activate it by running:
+
+.. code::
+
+    source /PATH/TO/ENV/bin/activate
+
+In the example above, I would be running:
+
+.. code::
+
+    source /Users/bluemarble/gridpath_sa_workshop_env/bin/activate
+
+If the activation was successful,
+you should see the environment name in parentheses in front of your current command line.
+
 
 Cbc solver
 ==========
@@ -89,8 +171,8 @@ If the cbc solver is not recognized at the CMD command prompt, restart CMD and t
 Windows should be able to find the cbc executable as long as its folder is in the system environment path.
 
 
-Mac OS
-######
+macOS
+#####
 
 On Mac, use your terminal to navigate to where you want to download/install CBC by entering:
 
