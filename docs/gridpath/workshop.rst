@@ -56,5 +56,17 @@ Launch JupyterLab by running:
 This will open Jupyter Lab in the current folder/working directory of your terminal.
 A browser window should open if run successfully.
 
+**Note:** By installing Jupyter Lab with the environment activated,
+that means Jupyter Lab is installed only in this environment and not universally on your machine.
+Therefore, if you try to run ``jupyter-lab`` again without the environment activated, it might not work.
+A workaround would be to install Jupyter Lab (using the same instructions as above) without your virtual environment activated.
+However, that might not be good practice in terms of version control.
+
+Installing the environment with this virtual environment also means that once you have the environment activated,
+every other package in the environment comes with it.
+In our case, because we installed GridPath (and all of the packages needed to run GridPath) in the same environment beforehand,
+when we launch the Jupyter Lab installed in the same environment, we are able to run GridPath in the notebooks.
+
+
 
 .. _`conda-forge channel`: https://conda-forge.org/
