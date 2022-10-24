@@ -143,6 +143,23 @@ your current environment. If you close your terminal, you might need to enter th
 (or save them to your ``bash``/``zsh`` environment, which is a bit more complicated and
 probably out of the scope of this workshop).
 
+To check if CBC is properly installed, run the following in your terminal:
+
+.. code:: bash
+
+    cbc
+
+You should see something like the following:
+
+.. code-block:: bash
+
+    Welcome to the CBC MILP Solver
+    Version: Devel (unstable)
+    Build Date: Oct 24 2022
+    Cbc takes input from arguments ( - switches to stdin)
+    Enter ? for list of commands or help
+    Cbc:
+
 
 
 .. _`AMPL website`: https://ampl.com/products/solvers/open-source/#cbc
