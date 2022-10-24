@@ -76,6 +76,9 @@ If you see the environment name in parenthesis before your current directory, th
 Cbc solver
 ==========
 
+Windows
+#######
+
 On Windows, you can also download the Cbc executable from the `AMPL website`_, specifically here for `64-bit Windows`_.
 
 GridPath allows you to specify the location of the solver executable; to get it to be recognized, automatically, you can also add the folder path to your PATH system environment variables (see instructions for Python above; `general instructions for Windows`_).
@@ -84,6 +87,62 @@ Make sure to close all windows of the system environment variables.
 Type ``cbc`` in CMD and the cbc solver should execute with a “Coin” prompt.
 If the cbc solver is not recognized at the CMD command prompt, restart CMD and try typing ``cbc`` again.
 Windows should be able to find the cbc executable as long as its folder is in the system environment path.
+
+
+Mac OS
+######
+
+On Mac, use your terminal to navigate to where you want to download/install CBC by entering:
+
+.. code::
+
+    cd /path/to/cbc
+
+Then, in your terminal, copy and paste the following:
+
+.. code::
+
+    wget https://raw.githubusercontent.com/coin-or/coinbrew/master/coinbrew
+    chmod u+x coinbrew
+    ./coinbrew fetch Cbc@master
+    ./coinbrew build Cbc
+    ./coinbrew install Cbc
+
+This process can take quite some time.
+After the installation, you may see something like this:
+
+.. code::
+
+    Installation is done automatically following build and test of each project.
+
+    Installation directory is writable.
+
+    Package will be installed to /Users/meas/Downloads/cbc-path/dist
+
+    Disabling uninstalled packages
+
+    Install completed. If executing any of the installed
+    binaries results in an error that shared libraries cannot
+    be found, you may need to
+      - add 'export LD_LIBRARY_PATH=/Users/meas/Downloads/cbc-path/dist/lib' to your ~/.bashrc (Linux)
+      - add 'export DYLD_LIBRARY_PATH=/Users/meas/Downloads/cbc-path/dist/lib' to ~/.bashrc (OS X)
+
+Please note the given directories. In order to get CBC to work, you need to enter something like the following:
+
+.. code::
+
+    export PATH="$PATH:/Users/meas/Downloads/cbc-path/dist/bin"
+    export export LD_LIBRARY_PATH="/Users/meas/Downloads/cbc-path/dist/lib"
+    export export DYLD_LIBRARY_PATH="/Users/meas/Downloads/cbc-path/dist/lib"
+
+Except replace the directories seen there with the directories given by your own terminal
+(which is based on where you downloaded the CBC file).
+
+I would recommend copying and saving the above ``export`` commands somewhere because that only impacts
+your current environment. If you close your terminal, you might need to enter them again
+(or save them to your ``bash``/``zsh`` environment, which is a bit more complicated and
+probably out of the scope of this workshop).
+
 
 
 .. _`AMPL website`: https://ampl.com/products/solvers/open-source/#cbc
