@@ -18,6 +18,9 @@ and follow along with the workshop instructors.
 Using command line
 ==================
 
+Creating a database
+###################
+
 Navigate to ``PATH\TO\GRIDPATH`` in your CMD by entering:
 
 .. code::
@@ -30,13 +33,14 @@ From there, navigate to the ``db`` subdirectory by typing:
 
     cd db
 
-**Creating a database**
-
 Create an empty database:
 
 .. code::
 
     python create_database.py --database sapp.db
+
+Adding data and scenarios to database
+#####################################
 
 Port the data in the ``csvs_sapp`` folder and the empty database that you just created (``sapp.db``):
 
@@ -53,7 +57,8 @@ Add the scenarios to ``sapp.db`` by running:
 
     python utilities\scenario.py --database sapp.db --csv_path csvs_sapp\scenarios_workshop.csv
 
-**Running base scenario***
+Running base scenario
+#####################
 
 Now we can run the scenarios using the data in the database.
 
@@ -71,7 +76,8 @@ Let us start by running the base scenario, ``env_r65_wk_simple1``, by entering:
 
 This could take a couple of minutes, depending on your computing system's capabilities.
 
-**Running scenario with unlimited transmission**
+Running scenario with unlimited transmission
+############################################
 
 We can run other scenarios that have been added to the .db, including a scenario with unlimited transmission (``env_r65_wk_simple2_unlimited_tx``):
 
@@ -80,7 +86,8 @@ We can run other scenarios that have been added to the .db, including a scenario
     python run_end_to_end.py --database ../db/sapp.db --scenario env_r65_wk_simple2_unlimited_tx
 
 
-**Visualizing results**
+Visualizing results
+###################
 
 Next, we will utilize the existing scripts in GridPath to visualize our scenario simulation results.
 First, let's move from the ``gridpath`` folder to the ``viz`` folder:
@@ -89,7 +96,8 @@ First, let's move from the ``gridpath`` folder to the ``viz`` folder:
 
     cd ../viz
 
-*Plotting total capacity*
+Plotting total capacity
+***********************
 
 The script that can be used to plot total capacity per period (at the load zone level) is ``capacity_total_plot.py``. See what input commands are needed for the script by running:
 
@@ -103,7 +111,8 @@ Let's say we want to check the total capacity in Namibia. We can do that by runn
 
     python capacity_total_plot.py --database ../db/test.db --scenario env_r65_wk_simple1 --load_zone Namibia --show
 
-*Plotting new capacity*
+Plotting new capacity
+*********************
 
 If we wanted to plot only new (added) capacity in each period, the correct script to use would be ``capacity_new_plot.py``. Verify the inputs of the script by running:
 
@@ -117,7 +126,8 @@ Again, checking the new capacity for each period in Namibia:
 
     python capacity_new_plot.py --database ../db/test.db --scenario env_r65_wk_simple1 --load_zone Namibia --show
 
-*Plotting dispatch*
+Plotting dispatch
+*****************
 
 We can use the ``dispatch_plot.py`` script to plot dispatch of electricity for a given scenario and load zone.
 Enter the following to check the inputs required to use ``dispatch_plot.py``:
@@ -132,7 +142,8 @@ To plot the dispatch of generation in South Africa for the base (``env_r65_wk_si
 
     python dispatch_plot.py --database ../db/test.db --scenario env_r65_wk_simple1 --load_zone SouthAfrica --show
 
-*Plotting comparison of total capacity between load zones*
+Plotting comparison of total capacity between load zones
+********************************************************
 
 Let's say we want to compare total capacity in each period across load zones.
 We can achieve that easily by using the ``capacity_total_loadzone_comparison_plot.py`` script:
