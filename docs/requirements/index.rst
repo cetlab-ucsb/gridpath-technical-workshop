@@ -160,7 +160,7 @@ You should see something like the following:
     Enter ? for list of commands or help
     Cbc:
 
-
+Type and enter ``exit`` to exit out of CBC.
 
 .. _`AMPL website`: https://ampl.com/products/solvers/open-source/#cbc
 .. _`64-bit Windows`: https://ampl.com/dl/open/cbc/cbc-win64.zip
