@@ -15,6 +15,9 @@ and follow along with the workshop instructors.
 Using command line
 ==================
 
+Creating a database
+###################
+
 Navigate to ``PATH\TO\GRIDPATH`` in your CMD by entering:
 
 .. code::
@@ -33,8 +36,6 @@ At this point, your working directory should look like ``PATH\TO\GRIDPATH\db``, 
 
     pwd
 
-**Create database**
-
 See the options available for the ``create_database.py`` script by entering:
 
 .. code::
@@ -47,7 +48,10 @@ Then, create an empty database:
 
     python create_database.py --database csv_examples.db
 
-Then, we will populate the database using data in the ``csvs_test_examples`` folder using two scripts in the ``db/utilities``.
+Adding data and scenarios to database
+#####################################
+
+Next, we will populate the database using data in the ``csvs_test_examples`` folder using two scripts in the ``db/utilities``.
 The database is populated in two stages:
 
 1. All input data is populated using ``port_csvs_to_db.py``.
@@ -84,7 +88,8 @@ Add the example scenarios to ``csv_examples.db`` by running:
     python utilities\scenario.py --database csv_examples.db --csv_path csvs_test_examples\scenarios.csv
 
 
-**Running scenarios**
+Running scenarios
+#################
 
 Now we can run the scenarios using the data in the database.
 
