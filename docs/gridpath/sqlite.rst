@@ -23,7 +23,7 @@ Viewing a database file
 =======================
 
 Windows
-=======
+#######
 
 Open the SQLiteStudio app.
 
