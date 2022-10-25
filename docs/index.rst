@@ -12,3 +12,4 @@ GridPath Technical Workshop
    gridpath/workshop
    gridpath/examples
    gridpath/sapp
+   gridpath/sqlite
