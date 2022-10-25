@@ -3,9 +3,9 @@ Running SAPP models and scenarios
 =================================
 
 In this section, we will be running some (simplified) scenarios of the SAPP model.
-You can download the input data for the SAPP here:
+You can download the input data for the SAPP here: https://www.dropbox.com/s/xcemgifdmcce3r6/csvs_sapp_GPv0.14.1_workshop_102022.zip?dl=0.
 
-You can place the input CSVs anywhere, as long as you properly point to the files when porting the data and assigning scenarios.
+You can extract the zip file and place the input CSVs anywhere, as long as you properly point to the files when porting the data and assigning scenarios.
 For this workshop, we recommend putting the input CSVs folder in the ``db`` subdirectory in the GridPath root directory.
 
 Using Jupyter/python notebooks
