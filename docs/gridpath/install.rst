@@ -46,10 +46,11 @@ To test the GridPath and solver installation, navigate to the main GridPath fold
     python -m unittest discover tests
 
 The command should run without errors.
-One possible error that you could encounter are: ``solver not found``, in which case, check whether the folder path to your cbc solver in your system environment variables is correct.
+One possible error that you could encounter is: ``solver not found``, in which case, check whether the folder path to your cbc solver in your system environment variables is correct.
 
 Once the test runs successfully, run an example problem from the main GridPath folder or any of its sub-folders.
-To run the scenario ``2horizons``, enter ``gridpath_run --scenario 2horizons --scenario_location LOCATION/OF/EXAMPLES/FOLDER``. No slashes before or after examples folder path.
+To run the scenario ``2horizons``, enter ``gridpath_run --scenario 2horizons --scenario_location LOCATION/OF/EXAMPLES/FOLDER``.
+No slashes before or after examples folder path.
 
 Download GridPath UI
 ====================
@@ -63,6 +64,4 @@ See these instructions for how to specify the Scenarios Directory, GridPath Data
 https://gridpath.readthedocs.io/en/latest/ui.html
 
 **Note that the UI has limited support at this point.**
-
-
 
