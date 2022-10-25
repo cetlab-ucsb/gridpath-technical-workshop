@@ -47,7 +47,7 @@ Port the data in the ``csvs_sapp`` folder and the empty database that you just c
 
 .. code::
 
-    python utilities\port_csvs_to_db.py --database sapp.db --csv_location csvs_sapp
+    python utilities/port_csvs_to_db.py --database sapp.db --csv_location csvs_sapp_GPv0.14.1_workshop_102022
 
 (This might take a while due to the large number of files needed to be ported.)
 
@@ -56,7 +56,7 @@ Add the scenarios to ``sapp.db`` by running:
 
 .. code::
 
-    python utilities\scenario.py --database sapp.db --csv_path csvs_sapp\scenarios_workshop.csv
+    python utilities/scenario.py --database sapp.db --csv_path csvs_sapp_GPv0.14.1_workshop_102022/scenarios_demo.csv
 
 Running base scenario
 #####################
@@ -69,13 +69,39 @@ Navigate to the ``gridpath`` folder by entering:
 
     cd ../gridpath
 
-Let us start by running the base scenario, ``env_r65_wk_simple1``, by entering:
+We're going to start off with a simple base model for Namibia.
+To run the ``namibia_base`` scenario within the ``sapp.db`` database, run:
 
 .. code::
 
-    python run_end_to_end.py --database ../db/sapp.db --scenario env_r65_wk_simple1
+    python run_end_to_end.py --database ../db/sapp.db --scenario namibia_base
 
 This could take a couple of minutes, depending on your computing system's capabilities.
+
+Visualizing capacity in base scenario
+*************************************
+
+Next, we will utilize the existing scripts in GridPath to visualize our scenario simulation results. First, let's move from the `gridpath` folder to the `viz` folder:
+
+.. code::
+
+    os.chdir(os.path.join(gp_path, 'viz'))
+
+Plotting total capacity
+***********************
+
+The script that can be used to plot total capacity per period (at the load zone level) is `capacity_total_plot.py`. See what input commands are needed for the script by running:
+
+.. code::
+
+    python capacity_total_plot.py --help
+
+Let's say we want to check the total capacity in Namibia. We can do that by running:
+
+.. code::
+
+    %run capacity_total_plot.py --database ../db/sapp.db --scenario namibia_base --load_zone Namibia --show
+
 
 Running scenario with unlimited transmission
 ############################################
